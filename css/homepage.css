@@ -1,0 +1,332 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header-wrapper {
+  height: 600px;
+  background: url(../img/header-bg-2.jpg) fixed top;
+  background-size: cover;
+}
+
+.header-text-wrapper {
+  height: 600px;
+  background: transparent;
+  text-align: center;
+}
+
+.header-text-wrapper h1 {
+  margin-top: 220px;
+  font-size: 70px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  color: white;
+  text-transform: capitalize;
+}
+
+.clients-wrapper {
+  height: 500px;
+  background: white;
+}
+
+.about-wrapper {
+  height: 400px;
+  background: white;
+}
+
+.section-header {
+  font-size: 70px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  color: #333;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.section-header-underline {
+  /* TODO: widen this thing with scroll*/
+  width: 30%;
+  border-bottom: 2px solid #333;
+  transition: all 1s ease-in-out;
+}
+
+.section-paragraph {
+  font-family: Open Sans, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.news-wrapper {
+  min-height: 700px;
+  background: white; // here
+  z-index: 1000;
+}
+
+.news-header {
+  text-align: center;
+}
+
+.posts-wrapper {
+  margin: 30px auto;
+  max-width: 1000px;
+  z-index: 10000;
+  /*background: white;*/
+}
+
+.post-wrapper {
+  margin-left: 30px;
+}
+
+.post {
+  width: 100%;
+  min-height: 300px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .2);
+  transform: translateY(0) scale(1);
+  transition: opacity .8s ease-in-out, transform .3s ease-in-out, box-shadow .3s;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.post-header-wrapper {
+  height: 200px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.post-header {
+  /*background-image: url(../img/header-bg-2.jpg);*/
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transform: scale(1);
+  transition: all .3s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+
+.post:hover {
+  box-shadow: 0 15px 20px 5px rgba(0, 0, 0, .25);
+  transform: translateY(-5px) scale(1.1);
+  -webkit-backface-visibility: hidden;
+}
+
+.post-header:hover {
+  transform: scale(1.2);
+  -webkit-backface-visibility: hidden;
+}
+
+.post-title-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+
+.post-title {
+  text-align: left;
+  font-size: 25px;
+  font-family: Open Sans, serif;
+  font-weight: 400;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+
+.post-read {
+  width: 100px;
+  background: white;
+  height: 50px;
+  border-radius: 5px;
+  margin: 50px auto 20px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .3);
+  transform: scale(1) translateY(0);
+  transition: all .3s ease-in-out;
+  line-height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+  font-family: Open Sans, serif;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+
+.post-read:hover {
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .4);
+  transform: scale(1.1) translateY(-5px);
+  -webkit-backface-visibility: hidden;
+}
+
+.more-news-button {
+  height: 50px;
+  width: 150px;
+  background: rgba(44, 62, 80, .9);
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .3);
+  transform: scale(1) translateY(0);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.more-news-button:hover {
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .4);
+  transform: scale(1.1) translateY(-5px);
+}
+
+.services-wrapper {
+  height: 650px;
+  background-size: cover;
+  background: url(../img/services-bg-14.jpg) fixed center;
+}
+
+.service {
+  background: rgba(255, 255, 255, .6);
+  /*color: white;*/
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .4);
+}
+
+.service h1 {
+  display: block;
+  height: 50px;
+  font-size: 25px;
+}
+
+.service-read {
+  background: rgba(255, 255, 255, .7);
+  font-size: 20px;
+  /*color: white;*/
+  width: 200px;
+}
+
+.service:hover {
+  box-shadow: 0 15px 20px 0px rgba(0, 0, 0, .4);
+  /*transform: translateY(-5px) scale(1.1);*/
+  /*-webkit-backface-visibility: hidden;*/
+}
+
+.white-colored {
+  color: white;
+}
+
+.white-colored-hr {
+  border-bottom: 2px solid white;
+}
+
+#service-1 {
+  background-image: url(../img/service-1.png);
+}
+
+#service-2 {
+  background-image: url(../img/service-2.gif);
+}
+
+#service-3 {
+  background-image: url(../img/service-3.jpg);
+}
+
+.post-header-info-wrapper {
+  height: 30px;
+}
+
+.post-header-info-wrapper h1 {
+  font-size: 20px;
+  color: #636363;
+  margin: 0 10px;
+  padding: 0;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+.post-header-info-views {
+  float: left;
+}
+
+.post-header-info-date {
+  float: right;
+}
+
+#footer {
+  width: 100%;
+  height: 300px;
+  background: rgba(44, 62, 80, .9);
+  /*position: fixed;*/
+  /*left: 0;*/
+  /*bottom: 0;*/
+  /*z-index: -10000;*/
+}
+
+#footer div {
+  margin-top: 20px;
+}
+
+.address {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.lang {
+  color: white;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.footer-social-list li {
+  display: inline;
+  margin-left: 5%;
+}
+
+.footer-social-list li:first-child {
+  margin-left: 0;
+}
+
+.footer-social-list li a {
+  color: white;
+}
+
+.footer-social-list li a:hover {
+  text-decoration: none;
+  /*background: none;*/
+  color: white;
+}
+
+.footer-social-list li a i {
+  font-size: 50px;
+  opacity: 1;
+}
+
+#post-1 {
+  background-image: url(../img/news-post-1.jpg);
+}
+
+#post-2 {
+  background-image: url(../img/news-post-2.jpg);
+}
+
+#post-3 {
+  background-image: url(../img/news-post-3.jpg);
+}
